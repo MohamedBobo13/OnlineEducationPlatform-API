@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutoMapper\Answer auto map\**" />
+    <Compile Remove="AutoMapper\Answerresultmap\**" />
+    <Compile Remove="AutoMapper\quesionmap\**" />
+    <Compile Remove="Dtos\**" />
+    <EmbeddedResource Remove="AutoMapper\Answer auto map\**" />
+    <EmbeddedResource Remove="AutoMapper\Answerresultmap\**" />
+    <EmbeddedResource Remove="AutoMapper\quesionmap\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <None Remove="AutoMapper\Answer auto map\**" />
+    <None Remove="AutoMapper\Answerresultmap\**" />
+    <None Remove="AutoMapper\quesionmap\**" />
+    <None Remove="Dtos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineEducationPlatform.DAL\OnlineEducationPlatform.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MailKit" Version="4.8.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.1.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.1" />
+  </ItemGroup>
+
+</Project>
